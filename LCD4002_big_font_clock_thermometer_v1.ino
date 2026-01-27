@@ -16,6 +16,7 @@ v.4 - switch big fonts for clock with temperature
 v.5 - added thermostat function
 v.5a - added adjust for temperature and hysteresis plus EEPROM store
 LCD4002_big_font_clock_thermometer_v1 - changed LCD2004 with LCD4002 display and used for test the DS3231 temperature sensor
+      same/based on https://nicuflorica.blogspot.com/2025/10/termostat-reglabil-cu-ceas-rtc-si.html
 */
 
 // Use: Pressing and holding the button will enter the clock set mode (on release of the button). Clock is set using the rotary encoder. 
@@ -1121,3 +1122,4 @@ void readds()
        }
      tpcitire = millis(); 
   }
+
