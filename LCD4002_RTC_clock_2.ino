@@ -523,17 +523,17 @@ void spatiu()
 //sets the clock
 void setclock (){
    setyear ();
-   lcd.clear (0);   lcd.clear (1);
+   lcd.clear (0); //  lcd.clear (1);
    setmonth ();
-   lcd.clear (0);   lcd.clear (1);
+   lcd.clear (0); //  lcd.clear (1);
    setday ();
-   lcd.clear (0);   lcd.clear (1);
+   lcd.clear (0); //  lcd.clear (1);
    sethours ();
-   lcd.clear (0);   lcd.clear (1);
+   lcd.clear (0); //  lcd.clear (1);
    setmins ();
-   lcd.clear(0);lcd.clear(1);
+   lcd.clear(0);  // lcd.clear(1);
    setsecs ();
-   lcd.clear(0);lcd.clear(1);  
+   lcd.clear(0);  // lcd.clear(1);  
    
    rtc.adjust(DateTime(setyeartemp,setmonthtemp,setdaytemp,sethourstemp,setminstemp,setsecstemp));
    delay (1000);
@@ -1397,4 +1397,5 @@ void WeekDay()
     if (zis == 6)
      Saturday();
 }
+
 
