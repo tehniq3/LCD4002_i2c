@@ -406,7 +406,7 @@ x = x0 + 30;
   usec0 = usec;  
 }
 
-if ((sec == sec7) or (info == 1))
+if (sec == sec7)
 {
   lcd.clear(0);
   delay(500);
@@ -1397,3 +1397,4 @@ void WeekDay()
     if (zis == 6)
      Saturday();
 }
+
