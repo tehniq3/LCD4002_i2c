@@ -13,6 +13,7 @@
  * LCD4002_RTC_clock_v1 - moved clock on LCD4002 with i2c interface, based on https://nicuflorica.blogspot.com/2025/10/ceas-rtc-cu-caractetere-mari-si-date.html
  * v1a - smooth transitions between informations, changed clock format 23.45.56 in 23:45:56 
  * v.2 - added name of the day using custon fonts based on https://www.instructables.com/Custom-Large-Font-For-16x2-LCDs/
+ v.2a - corrected display sequence: date - temperature - name of the day
  */
 
 #include <avr/pgmspace.h>
@@ -412,7 +413,7 @@ if (sec == sec7)
   delay(500);
 //  lcd.clear(1);
   
-  if (uminut%3 == 0)
+  if (minut%3 == 0)
   {
   zzi = zi/10;
   uzi = zi%10;
@@ -455,7 +456,7 @@ x = x0 + 34;
   printbig(uan,x);
  }
  else
-  if (uminut%3 == 1)
+  if (minut%3 == 1)
  {
  temp = (float)(10.*temperatura);
  ztemp = temp/100;
@@ -492,7 +493,7 @@ x = x0 + 32;
   printbig(11,x);
  }
  else
-  if (uminut%3 == 2)
+  if (minut%3 == 2)
  {
   lcd.clear(0);
  //  lcd.clear(1);
@@ -1397,5 +1398,6 @@ void WeekDay()
     if (zis == 6)
      Saturday();
 }
+
 
 
