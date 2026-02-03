@@ -3,4 +3,5 @@ based on details and sketch from https://youtu.be/3kq5eD76XhQ?si=6Vvs8gGTUk5sW_L
 
 Thermostat with RTC clock used infi from https://nicuflorica.blogspot.com/2025/10/termostat-reglabil-cu-ceas-rtc-si.html just changed LCD2004 with LCD4002 display and also used DS3231 temperature sensor instead DS18B20 sensor.
 
-1sr article: https://nicuflorica.blogspot.com/2026/02/termostat-reglabil-cu-ceas-rtc-si.html
+1st article: https://nicuflorica.blogspot.com/2026/02/termostat-reglabil-cu-ceas-rtc-si.html
+2nd article: https://nicuflorica.blogspot.com/2026/02/ceas-rtc-reglabil-pe-afisaj-i2c-lcd4002.html
